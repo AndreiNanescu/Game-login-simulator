@@ -7,6 +7,7 @@ private:
 	int numberOfLoggedPlayers;
 public:
 	friend std::ostream& operator <<(std::ostream& output,const PlayerDataBase & s);
+	bool isEmpty();
 	void addPlayers(int);
 	void deletePlayers(int);
 	bool findPlayer();

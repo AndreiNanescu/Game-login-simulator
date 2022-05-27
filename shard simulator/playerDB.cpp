@@ -1,11 +1,18 @@
 #include "playerDB.h"
 #include <fstream>
 #include <iostream>
+#include <filesystem>
 
 std::ostream& operator <<(std::ostream& output, const PlayerDataBase& DB)
 {
 	output << DB.PlayerData.getUsername()<< " " << DB.PlayerData.getIP();
 	return output;
+}
+
+bool PlayerDataBase::isEmpty()
+{
+	std::ifstream Storage("PlayerData.txt");
+	return Storage.peek() == std::ifstream::traits_type::eof();
 }
 
 void PlayerDataBase::addPlayers(int numberOfPlayers)
