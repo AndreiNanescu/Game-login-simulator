@@ -4,7 +4,7 @@
 
 std::ostream& operator <<(std::ostream& output, const PlayerDataBase& DB)
 {
-	output << DB.PlayerData.userName << " " << DB.PlayerData.IP;
+	output << DB.PlayerData.getUsername()<< " " << DB.PlayerData.getIP();
 	return output;
 }
 
@@ -12,7 +12,7 @@ void PlayerDataBase::addPlayers(int numberOfPlayers)
 {
 	PlayerDataBase auxDB;
 	std::ofstream Storage;
-	Storage.open("PlayerData.txt");
+	Storage.open("PlayerData.txt",std::ios_base::app);
 	for (int i = 0; i < numberOfPlayers; i++)
 	{
 		auxDB.PlayerData=auxDB.PlayerData.generatePlayer();
