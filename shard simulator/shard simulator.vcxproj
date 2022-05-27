@@ -140,10 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="player.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="playerDB.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="player.h" />
+    <ClInclude Include="playerDB.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="PlayerData.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

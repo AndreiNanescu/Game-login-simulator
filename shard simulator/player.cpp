@@ -18,10 +18,17 @@ player player::generatePlayer()
 	for (int i = 0; i < 4; i++)
 	{
 		randomNumber = rand() % 255;
-		auxClass.IP = std::to_string(randomNumber);
-		auxClass.IP += '.';
+		auxClass.IP += std::to_string(randomNumber);
+		auxClass.IP.push_back('.');
 	}
 	auxClass.IP.pop_back();
-
 	return auxClass;
+}
+std::string player::getIP() const
+{
+	return IP;
+}
+std::string player::getUsername() const
+{
+	return userName;
 }

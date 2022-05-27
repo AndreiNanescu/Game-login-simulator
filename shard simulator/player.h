@@ -2,10 +2,12 @@
 #include <string>
 class player
 {
-private:
+public:
 	std::string userName;
 	std::string IP;
-public:
 	player generatePlayer();
+	std::string getUsername() const;
+	std::string getIP() const;
+
 };
 
