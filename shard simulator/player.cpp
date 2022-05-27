@@ -3,7 +3,6 @@
 const int MAX{ 26 };
 player player::generatePlayer()
 {
-	srand(time(0));
 	player auxClass;
 	//Username generator
 	char alphabet[MAX] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g',

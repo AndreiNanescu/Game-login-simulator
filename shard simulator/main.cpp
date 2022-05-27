@@ -4,5 +4,6 @@
 int main()
 {
 	PlayerDataBase testObj;
-	testObj.addPlayers(2);
+	srand(time(NULL));
+	testObj.addPlayers(4);
 }
