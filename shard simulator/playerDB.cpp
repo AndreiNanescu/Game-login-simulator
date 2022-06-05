@@ -3,32 +3,7 @@
 #include <iostream>
 #include <filesystem>
 #include <string>
-
-int PlayerDataBase::getPoolSize()
-{
-	std::ifstream playerNumber;
-	playerNumber.open("playerNumber.txt");;
-	std::string auxString;
-	playerNumber >> auxString;
-	playerNumber.close();
-	return stoi(auxString);
-}
-void PlayerDataBase::setPoolSize(int numberOfPlayers)
-{
-	std::ofstream playerNumber;
-	playerNumber.open("playerNumber.txt");
-	playerNumber << numberOfPlayers;
-	playerNumber.close();
-}
-void PlayerDataBase::updatePoolSize(int numberOfPlayers)
-{
-	std::fstream playerNumber;
-	int oldNumberOfPlayers;
-	playerNumber >> oldNumberOfPlayers;
-	oldNumberOfPlayers += numberOfPlayers;
-	playerNumber << oldNumberOfPlayers;
-	playerNumber.close();
-}
+#include "playerNumber.h"
 std::ostream& operator <<(std::ostream& output, const PlayerDataBase& DB)
 {
 	output << DB.PlayerData.getUsername()<< " " << DB.PlayerData.getIP();

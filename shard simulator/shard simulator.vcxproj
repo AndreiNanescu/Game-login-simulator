@@ -144,12 +144,14 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="playerDB.cpp" />
+    <ClCompile Include="playerNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="login.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="playerDB.h" />
+    <ClInclude Include="playerNumber.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="PlayerData.txt" />
