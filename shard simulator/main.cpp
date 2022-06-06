@@ -1,7 +1,7 @@
 #include <iostream>
 #include "playerDB.h"
 #include "menu.h"
-
+#include "login.h"
 int main()
 {
 	PlayerDataBase databaseObj;
@@ -27,4 +27,6 @@ int main()
 		std::cin >> poolSize;
 		databaseObj.newPlayerPool(poolSize);
 	}
+	login loginObj;
+	loginObj.logInPlayer();
 }

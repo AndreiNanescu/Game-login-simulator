@@ -19,8 +19,11 @@ void setPoolSize(int numberOfPlayers)
 void updatePoolSize(int numberOfPlayers)
 {
 	std::fstream playerNumber;
+	playerNumber.open("playerNumber.txt",std::ios::in);
 	int oldNumberOfPlayers;
 	playerNumber >> oldNumberOfPlayers;
+	playerNumber.close();
+	playerNumber.open("playerNumber.txt", std::ios::out);
 	oldNumberOfPlayers += numberOfPlayers;
 	playerNumber << oldNumberOfPlayers;
 	playerNumber.close();

@@ -154,6 +154,7 @@
     <ClInclude Include="playerNumber.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="LoggedPlayers.txt" />
     <Text Include="PlayerData.txt" />
     <Text Include="playerNumber.txt" />
   </ItemGroup>

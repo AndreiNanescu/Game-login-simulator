@@ -58,5 +58,8 @@
     <Text Include="playerNumber.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="LoggedPlayers.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
