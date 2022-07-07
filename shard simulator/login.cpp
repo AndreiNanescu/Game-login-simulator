@@ -1,8 +1,8 @@
 #include "login.h"
+#include <iostream>
 #include <string>
 #include <fstream>
 #include "playerNumber.h"
-#include <iostream>
 void login::logInPlayer()
 {
 	std::ifstream playerData;
@@ -14,6 +14,7 @@ void login::logInPlayer()
 	srand(time(0));
 	int randomNumber{ rand() % (getPoolSize() / 4) };
 	updatePoolSize(-randomNumber);
+	std::cout << "Logged " << randomNumber << " players."<<std::endl;
 	std::string line;
 	while (getline(playerData, line))
 	{
