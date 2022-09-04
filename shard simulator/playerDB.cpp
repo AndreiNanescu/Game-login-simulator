@@ -19,6 +19,9 @@ void PlayerDataBase::newPlayerPool(int numberOfPlayers)
 	setPoolSize(numberOfPlayers);
 	PlayerDataBase auxDB;
 	std::ofstream Storage;
+	std::ofstream playerNumberOut;
+	playerNumberOut.open("playerNumber.txt");
+	playerNumberOut << numberOfPlayers;
 	Storage.open("PlayerData.txt");
 	for (int i = 0; i < numberOfPlayers; i++)
 	{

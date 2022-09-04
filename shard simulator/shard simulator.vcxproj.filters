@@ -50,15 +50,18 @@
     <ClInclude Include="playerNumber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="loggedPlayers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="PlayerData.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="playerNumber.txt">
+    <Text Include="poolSize.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="LoggedPlayers.txt">
+    <Text Include="loggedPlayers.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

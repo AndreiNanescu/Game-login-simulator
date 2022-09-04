@@ -147,6 +147,7 @@
     <ClCompile Include="playerNumber.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="loggedPlayers.h" />
     <ClInclude Include="login.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="player.h" />
@@ -154,9 +155,9 @@
     <ClInclude Include="playerNumber.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="LoggedPlayers.txt" />
+    <Text Include="loggedPlayers.txt" />
     <Text Include="PlayerData.txt" />
-    <Text Include="playerNumber.txt" />
+    <Text Include="poolSize.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
